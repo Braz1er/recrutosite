@@ -5,6 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-    <h>Hello {{name}}! {{message}}!</h>
+<ul>
+{% for item in data %}
+    <li>{{item.name}}</li>
+    <li>{{item.message}}</li>
+{% endfor %}
+</ul>
 </body>
 </html>

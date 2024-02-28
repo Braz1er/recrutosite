@@ -8,7 +8,13 @@ def index():
     message = request.args.get('message')
     # name = 'прарпк'
     # message = 'авпроавоп'
-    return render_template('index.html', name=name, message=message)
+    data = [
+        {
+            'name': name
+            'message': message
+        }
+    ]
+    return render_template('index.html', data=data)
 
 if __name__ == '__main__':
     app.run(debug=True)
