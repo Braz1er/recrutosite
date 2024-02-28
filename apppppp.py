@@ -1,4 +1,4 @@
-from flask import request, Flask, render_template
+from flask import request, Flask
 app = Flask(__name__)
 
 @app.route('/')
